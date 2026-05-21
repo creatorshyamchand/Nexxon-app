@@ -10,9 +10,7 @@ export default defineConfig({
     sourcemap: false,
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: 'index.html'
-      },
+      input: 'index.html',
       output: {
         entryFileNames: 'assets/[name].js',
         chunkFileNames: 'assets/[name].js',
@@ -22,12 +20,6 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: true,
-    cors: true,
-    allowedHosts: true
-  },
-  preview: {
-    port: 4173,
     open: true
   }
 })
