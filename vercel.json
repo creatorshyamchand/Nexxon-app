@@ -5,10 +5,10 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "github": {
-    "silent": true
-  }
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
